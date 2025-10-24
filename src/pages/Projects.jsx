@@ -45,6 +45,10 @@ const Projects = ({ language }) => {
       social: {
         title: 'Développement Social',
         description: 'Soutien aux groupes vulnérables, promotion de l\'égalité des genres, programmes de microfinance et initiatives de développement économique local.'
+      },
+      info: {
+        title: 'Information récente',
+        description: "Visite de plus de 500 hectares de terres agricoles à Kisantu : ANACHOP et Simlaw Seeds en mission à Nenga Kilweka Kisantu, Kongo Central – Le 19 octobre, l’ONG ANACHOP, accompagnée de son partenaire kényan Simlaw Seeds, a visité plus de 500 hectares de terres agricoles à Nenga Kilweka, en territoire de Kisantu. Cette mission visait à évaluer le potentiel de la zone en vue de lancer un projet pilote agricole durable. Selon Caleb Songa, coordinateur de l’ONG, l’objectif est de mettre en place un programme innovant axé sur la production à grande échelle, la formation des agriculteurs et l’introduction de semences de qualité. La mission a révélé un bon potentiel agricole (sols fertiles, eau disponible, main-d’œuvre locale), mais aussi des défis liés aux infrastructures et équipements. Simlaw Seeds s’est engagée à fournir des semences certifiées, un appui technique et des formations. Une phase expérimentale est prévue, avec l’implication des communautés locales, notamment des jeunes et des femmes. Le projet s’inscrit dans les efforts de développement rural durable soutenus par les autorités, avec des retombées attendues en matière de croissance économique et de sécurité alimentaire dans la région. Cellule de communication – Elie Mata"
       }
     },
     en: {
@@ -67,6 +71,10 @@ const Projects = ({ language }) => {
       social: {
         title: 'Social Development',
         description: 'Support for vulnerable groups, promotion of gender equality, microfinance programs and local economic development initiatives.'
+      },
+      info: {
+        title: 'Recent information',
+        description: "Visit of more than 500 hectares of agricultural land in Kisantu: ANACHOP and Simlaw Seeds on a mission to Nenga Kilweka Kisantu, Kongo Central – On October 19, the NGO ANACHOP, accompanied by its Kenyan partner Simlaw Seeds, visited more than 500 hectares of agricultural land in Nenga Kilweka, in the territory of Kisantu. This mission aimed to assess the area’s potential with a view to launching a sustainable pilot agricultural project. According to Caleb Songa, the NGO’s coordinator, the objective is to establish an innovative program focused on large-scale production, farmer training, and the introduction of quality seeds. The mission revealed good agricultural potential (fertile soils, available water, local labor) but also challenges related to infrastructure and equipment. Simlaw Seeds committed to providing certified seeds, technical support, and training. An experimental phase is planned, involving local communities, particularly youth and women. The project is part of sustainable rural development efforts supported by the authorities, with expected benefits in terms of economic growth and food security in the region. Communication Unit – Elie Mata."
       }
     }
   };
@@ -105,17 +113,8 @@ const Projects = ({ language }) => {
     {
       icon: Megaphone,
       color: 'green',
-      title: 'Information récente',
-      description: `
-Kisantu, Kongo Central – Le 19 octobre 2025, l’ONG ANACHOP, accompagnée de son partenaire kényan Simlaw Seeds, a visité plus de 500 hectares de terres agricoles à Nenga Kilweka, en territoire de Kisantu. Cette mission visait à évaluer le potentiel de la zone en vue de lancer un projet pilote agricole durable.
-
-Selon Caleb Songa, coordinateur de l’ONG, l’objectif est de mettre en place un programme innovant axé sur la production à grande échelle, la formation des agriculteurs et l’introduction de semences de qualité.
-
-La mission a révélé un bon potentiel agricole (sols fertiles, eau disponible, main-d’œuvre locale), mais aussi des défis liés aux infrastructures et équipements. Simlaw Seeds s’est engagée à fournir des semences certifiées, un appui technique et des formations.
-
-Une phase expérimentale est prévue, avec l’implication des communautés locales, notamment des jeunes et des femmes. Le projet s’inscrit dans les efforts de développement rural durable soutenus par les autorités, avec des retombées attendues en matière de croissance économique et de sécurité alimentaire dans la région.
-
-Cellule de communication – Elie Mata`,
+      title: t.info.title,
+      description: t.info.description,
       image: '/nous.jpg'
     }
   ];

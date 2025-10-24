@@ -65,7 +65,7 @@ const Contact = ({ language }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:contact@anachop.org?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`${t.form.name}: ${formData.name}\n${t.form.email}: ${formData.email}\n\n${formData.message}`)}`;
+    const mailtoLink = `mailto:Anachoprdc7@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`${t.form.name}: ${formData.name}\n${t.form.email}: ${formData.email}\n\n${formData.message}`)}`;
     
     window.location.href = mailtoLink;
     
